@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">jetpackcompose assess</string>
+    <string name="email_hint">Email </string>
+    <string name="password_hint">Password</string>
+    <string name="hide_password">Hide password</string>
+    <string name="show_password">Show Password</string>
+</resources>
