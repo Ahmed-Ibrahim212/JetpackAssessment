@@ -1,5 +1,6 @@
 package com.example.jetpackcomposeassess.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.jetpackcomposeassess.data.model.Model
@@ -33,9 +34,12 @@ class UserViewModel @Inject constructor(private val authRepository: AuthReposito
 
     fun getAllUserInfo() {
         viewModelScope.launch(Dispatchers.IO) {
-            for (i in 0..2){
+            for (i in 0..2)
+            try {
                 val result = authRepository.getUserInfo()
                 (handleResponse(result))
+            }catch (e: Exception){
+                Log.d("FAILURE DETAILS", "$e")
             }
 
         }
