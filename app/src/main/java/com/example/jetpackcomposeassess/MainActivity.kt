@@ -54,17 +54,3 @@ fun DefaultPreview() {
         Greeting("Android")
     }
 }
-
-//if (email.value.isEmpty() && password.value.isNotEmpty()){
-//    Toast.makeText(context, "Email is Empty", Toast.LENGTH_LONG).show()
-//}
-//if (password.value.isEmpty() && email.value.isNotEmpty()){
-//    Toast.makeText(context,"Password is Empty", Toast.LENGTH_SHORT).show()
-//}
-//if (email.value.isEmpty() && password.value.isEmpty()){
-//
-//    Toast.makeText(context,"Email and Password are empty", Toast.LENGTH_SHORT).show()
-//}
-//if (email.value.isNotEmpty()&& password.value.isNotEmpty()){
-//    Toast.makeText(context,"Successfully Login", Toast.LENGTH_SHORT).show()
-//}
