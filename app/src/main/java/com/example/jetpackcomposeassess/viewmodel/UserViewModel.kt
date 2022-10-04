@@ -24,7 +24,7 @@ class UserViewModel @Inject constructor(private val authRepository: AuthReposito
     val userList = _userList.asStateFlow()
     val searchFilter = MutableStateFlow("")
 
-    val searchedCustomers = userList.combine(
+    val searchedName = userList.combine(
         searchFilter
     ) { userList, searchFilter ->
         userList.filter {

@@ -29,7 +29,7 @@ fun DetailScreen(
     userViewModel: UserViewModel
 ) {
 
-    val users: List<Model> by  userViewModel.searchedCustomers.collectAsState(initial = emptyList())
+    val users: List<Model> by  userViewModel.searchedName.collectAsState(initial = emptyList())
 
     Column(
         modifier = Modifier

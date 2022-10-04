@@ -99,8 +99,7 @@ fun LoginScreen(
 
         Button(
             onClick = {
-
-                if (email.error == null && password.error == null){
+                if (email.error == null && password.error == null ){
                     Log.d("ITSOED", "IT email ? ${email.error != null} password ? ${password.error != null}")
                     onClick()
                 }
