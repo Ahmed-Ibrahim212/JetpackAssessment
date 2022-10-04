@@ -1,6 +1,6 @@
 package com.example.jetpackcomposeassess.data.repository
 
-import com.example.jetpackcomposeassess.ApiService
+import com.example.jetpackcomposeassess.view.ApiService
 import com.example.jetpackcomposeassess.data.model.Model
 import retrofit2.Response
 import javax.inject.Inject

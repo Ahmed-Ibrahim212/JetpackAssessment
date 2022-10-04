@@ -1,6 +1,5 @@
-package com.example.jetpackcomposeassess
+package com.example.jetpackcomposeassess.view
 
-import android.util.Log
 import java.util.regex.Pattern
 
 

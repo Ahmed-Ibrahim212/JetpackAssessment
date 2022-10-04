@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeassess
+package com.example.jetpackcomposeassess.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,14 +8,12 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
-import com.example.jetpackcomposeassess.data.model.Location
 import com.example.jetpackcomposeassess.data.model.Model
 import com.example.jetpackcomposeassess.data.model.Name
 import com.example.jetpackcomposeassess.data.model.Result
 import com.example.jetpackcomposeassess.ui.theme.JetpackcomposeAssessTheme
 import com.example.jetpackcomposeassess.viewmodel.UserViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class DetailsActivity : ComponentActivity() {

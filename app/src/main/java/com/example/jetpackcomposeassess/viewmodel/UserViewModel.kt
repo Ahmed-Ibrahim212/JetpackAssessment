@@ -1,9 +1,5 @@
 package com.example.jetpackcomposeassess.viewmodel
 
-import android.util.Log
-import android.util.Patterns
-import androidx.lifecycle.MediatorLiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.jetpackcomposeassess.data.model.Model
@@ -24,6 +20,9 @@ class UserViewModel @Inject constructor(private val authRepository: AuthReposito
     val userList = _userList.asStateFlow()
     val searchFilter = MutableStateFlow("")
 
+
+
+    //search View
     val searchedName = userList.combine(
         searchFilter
     ) { userList, searchFilter ->
@@ -31,7 +30,6 @@ class UserViewModel @Inject constructor(private val authRepository: AuthReposito
             it.results.get(0).name?.first?.lowercase()?.contains(searchFilter.lowercase()) == true ||
                     it.results.get(0).name?.last?.lowercase()?.contains(searchFilter.lowercase()) == true }
     }
-
 
     fun getAllUserInfo() {
         viewModelScope.launch(Dispatchers.IO) {
@@ -53,5 +51,4 @@ class UserViewModel @Inject constructor(private val authRepository: AuthReposito
         }
         return Resource.Error(null, userData.message())
     }
-
 }

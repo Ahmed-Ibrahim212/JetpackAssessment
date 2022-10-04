@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeassess
+package com.example.jetpackcomposeassess.view
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*

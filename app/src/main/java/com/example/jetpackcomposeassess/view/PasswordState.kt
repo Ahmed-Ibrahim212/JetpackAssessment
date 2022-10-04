@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeassess
+package com.example.jetpackcomposeassess.view
 
 class PasswordState: TextFieldState(
     validator = :: isPasswordValid,

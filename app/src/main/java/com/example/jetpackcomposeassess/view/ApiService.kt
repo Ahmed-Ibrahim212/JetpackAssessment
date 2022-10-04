@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeassess
+package com.example.jetpackcomposeassess.view
 
 import android.content.Context
 import com.example.jetpackcomposeassess.data.model.Model

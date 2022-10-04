@@ -1,6 +1,6 @@
 package com.example.jetpackcomposeassess.di
 
-import com.example.jetpackcomposeassess.ApiService
+import com.example.jetpackcomposeassess.view.ApiService
 import com.example.jetpackcomposeassess.data.repository.AuthRepository
 import dagger.Module
 import dagger.Provides
@@ -10,7 +10,6 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import javax.inject.Singleton
 
 
